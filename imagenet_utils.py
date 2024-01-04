@@ -1,7 +1,7 @@
 import numpy as np
 import json
 
-from tf.keras.utils.data_utils import get_file
+from tensorflow.keras.utils.data_utils import get_file
 from keras import backend as K
 
 CLASS_INDEX = None
