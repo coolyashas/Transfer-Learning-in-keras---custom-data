@@ -7,11 +7,11 @@ from keras.preprocessing import image
 from keras.applications.imagenet_utils import preprocess_input
 from imagenet_utils import decode_predictions
 from keras.layers import Dense, Activation, Flatten
-from keras.layers import merge, Input
+from keras.layers import Input
 from keras.models import Model
-from keras.utils import np_utils
+from tensorflow.python.keras.utils import np_utils
 from sklearn.utils import shuffle
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 
 img_path = 'elephant.jpg'
 img = image.load_img(img_path, target_size=(224, 224))

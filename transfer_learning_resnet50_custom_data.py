@@ -9,9 +9,9 @@ from keras.layers import GlobalAveragePooling2D, Dense, Dropout,Activation,Flatt
 from imagenet_utils import preprocess_input
 from keras.layers import Input
 from keras.models import Model
-from keras.utils import np_utils
+from tensorflow.python.keras.utils import np_utils
 from sklearn.utils import shuffle
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 
 img_path = 'elephant.jpg'
 img = image.load_img(img_path, target_size=(224, 224))
